@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# 🚀 AI Text & PDF Summarizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered summarization tool built with **React**, **Redux**, **Express.js**, and **GPT-OSS**.
 
-Currently, two official plugins are available:
+This application allows users to upload long text or PDF files, generate structured summaries, and automatically receive key questions extracted from the content.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🔥 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🧠 AI Integration
+- Summarizes both text and PDF content using GPT-OSS.
+- Generates meaningful questions based on the uploaded content.
+- Returns strictly structured JSON for reliable parsing.
 
-## Expanding the ESLint configuration
+### 📄 Text & PDF Processing
+- PDF upload support via Multer.
+- Text extraction from PDFs using `pdfreader`.
+- Direct text input support for quick summarization.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### ⚛️ Frontend (React)
+- Built with React for a smooth user experience.
+- Redux Toolkit for global state management.
+- React Router with dynamic parameter-based routing.
+- Clean and minimal UI layout.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🚀 Backend (Express.js)
+- Structured API endpoints for text and PDF processing.
+- Safe text processing and prompt generation.
+- Handles multipart form data for file uploads.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Frontend
+- React  
+- Redux Toolkit  
+- React Router  
+- TypeScript (optional)  
+- Fetch API  
+- CSS  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Backend
+- Node.js  
+- Express.js  
+- Multer  
+- pdfreader  
+- HuggingFace Inference Client (GPT-OSS)  
+- dotenv  
+- CORS  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+## Screenshots
+
+### Home Page
+![Home Page](./screenshots/home.png)
+
+### Note Page
+![Note Page](./screenshots/notes.png)
+
+### Summary Result
+![Summary Result](./screenshots/summary.png)
+
+
