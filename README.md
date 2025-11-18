@@ -57,9 +57,12 @@ This application allows users to upload long text or PDF files, generate structu
 ![Home Page](./screenshots/home.png)
 
 ### Note Page
-![Note Page](./screenshots/notes.png)
+![Note Page](./screenshots/note.png)
 
 ### Summary Result
 ![Summary Result](./screenshots/summary.png)
+
+### Questions
+![Questions](./screenshots/questions.png)
 
 
