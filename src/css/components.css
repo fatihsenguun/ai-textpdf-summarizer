@@ -1,0 +1,85 @@
+.noteBoxModern {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background: #F5F6FA;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    transition: 0.15s ease;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.06);
+}
+
+.noteBoxModern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+}
+
+.noteHeader {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.deleteBtn {
+    border: none;
+    background: #f3f3f3;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    border-radius: 10px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.navContainer {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+         background-color: #F5F6FA;
+
+
+  
+}
+
+.navRight{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+     gap: 30px;
+    padding: 20px;
+     
+}
+
+.navItem {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    transition: 0.2s;
+   
+
+}
+
+.navItem:hover {
+    background: #f3f3f3;
+    transform: translateY(-1px);
+}
+
+.deleteBtn:hover {
+    background: #e63946;
+    color: white;
+}
+.logo{
+height: 100%;
+width: 80px;
+margin-left: 10px;
+
+
+}

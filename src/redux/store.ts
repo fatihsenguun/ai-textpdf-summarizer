@@ -1,0 +1,47 @@
+// store.ts
+import { configureStore, combineReducers } from '@reduxjs/toolkit'
+import noteReducer from './slices/noteSlice';
+import loadingReducer from './slices/loadingSlice'
+
+import {
+  persistStore,
+  persistReducer,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from 'redux-persist'
+import storage from 'redux-persist/lib/storage' // localStorage kullanımı
+
+// Persist config
+const persistConfig = {
+  key: 'root',
+  storage,
+  whitelist: ['notes'], // sadece notes slice persist edilecek
+}
+
+// Root reducer
+const rootReducer = combineReducers({
+  notes: noteReducer,
+  loading: loadingReducer,
+})
+
+// Persisted reducer
+const persistedReducer = persistReducer(persistConfig, rootReducer)
+
+export const store = configureStore({
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }),
+})
+
+export const persistor = persistStore(store)
+
+export type RootState = ReturnType<typeof store.getState>
+export type AppDispatch = typeof store.dispatch

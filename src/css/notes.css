@@ -1,0 +1,117 @@
+.notesPage {
+    padding-top: 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+.notesMain {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    
+}
+
+.noteTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.title { 
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+.removeButton {
+  background: linear-gradient(90deg, #1e1d90, #889884);
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight:600;
+    transition: 0.2s;
+}
+
+
+
+.place {
+    color: #7a7575;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home {
+  height: 100vh;
+
+}
+
+.noteDetailsPage {
+    padding-top: 40px;
+}
+
+.noteDetailsCard {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.noteTitle {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.sectionTitle {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 20px;
+}
+
+.sectionText {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.questionsList {
+    margin-top: 10px;
+}
+
+.questionItem {
+    font-size: 16px;
+    color: #000000;
+    padding: 6px 0;
+}
+
+
+
+
+
+
+
+.noteDiv {
+  padding-right: 15%;
+  padding-left: 15%;
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
